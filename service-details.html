@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Support Coordination Service | Enhanced Living Pathways</title>
-  <meta name="description" content="Expert NDIS support coordination to help you understand your plan, connect with providers, and achieve your goals. Registered NDIS provider.">
-  <meta name="keywords" content="NDIS support coordination, plan management, NDIS provider connections, support coordinator, NDIS plan assistance">
+  <title>Our Services | Enhanced Living Pathways</title>
+  <meta name="description" content="Comprehensive NDIS support services including community participation, mentoring, daily living assistance, recovery coaching, support coordination, and supported independent living.">
+  <meta name="keywords" content="NDIS services, community participation, mentoring, daily living support, recovery coaching, support coordination, SIL, STA, MTA">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.ico" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -27,6 +27,100 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    /* Logo responsive styles */
+    .logo img {
+      max-height: 150px;
+      width: auto;
+      transition: all 0.3s ease;
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+      .logo img {
+        max-height: 130px;
+        width: auto;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .logo img {
+        max-height: 100px;
+        width: auto;
+      }
+    }
+    
+    /* Ensure header accommodates logo properly */
+    .branding {
+      padding: 10px 0;
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+      .branding {
+        padding: 5px 0;
+      }
+    }
+    
+    .service-tabs .nav-link {
+      color: #333;
+      font-weight: 500;
+      padding: 1rem;
+      border: none;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .service-tabs .nav-link:hover {
+      border-bottom-color: #ffb347;
+      color: #ffb347;
+    }
+    .service-tabs .nav-link.active {
+      border-bottom-color: #ffb347;
+      color: #ffb347;
+      background: transparent;
+    }
+    .service-content-section {
+      padding: 3rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .service-content-section:last-child {
+      border-bottom: none;
+    }
+    .service-icon-large {
+      font-size: 3rem;
+      color: #ffb347;
+      margin-bottom: 1.5rem;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+    .feature-list li {
+      padding: 0.5rem 0;
+      padding-left: 2rem;
+      position: relative;
+    }
+    .feature-list li:before {
+      content: "•";
+      color: #ffb347;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+    .info-box {
+      background: #f8f9fa;
+      padding: 2rem;
+      border-radius: 10px;
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+    .info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .info-box h4 {
+      color: #ffb347;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 
 <body class="service-details-page">
@@ -36,8 +130,8 @@
     <div class="topbar d-flex align-items-center dark-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@enhancedliving.com.au">contact@enhancedliving.com.au</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>1300 123 456</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:admin.enhancedlivingpathways.com.au">admin.enhancedlivingpathways.com.au</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+61 406 936 623</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -48,17 +142,16 @@
       </div>
     </div><!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-cente">
+    <div class="branding d-flex align-items-center">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/logo.png" alt="Enhanced Living Pathways" style="max-height: 150px; width: auto;">
+          <img src="assets/img/logo.png" alt="Enhanced Living Pathways" style="max-height: 220px; width: auto;">
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About NDIS</a></li>
             <li><a href="index.html#services">Our Services</a></li>
             <li><a href="index.html#stories">Participant Stories</a></li>
             <li><a href="index.html#contact">Contact</a></li>
@@ -78,294 +171,399 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Support Coordination</h1>
+        <h1 class="mb-2 mb-lg-0">Our Services</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#services">Our Services</a></li>
-            <li class="current">Support Coordination</li>
+            <li class="current">Services</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-
-          <!-- Service Introduction -->
-          <div class="col-lg-8 mx-auto">
-
-            <div class="service-intro" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-badge">
-                <span>NDIS Capacity Building</span>
-              </div>
-              <h1>Support Coordination Service</h1>
-              <p class="lead">Expert guidance to navigate your NDIS plan, connect with quality providers, and build a support team that helps you achieve your goals and live the life you choose.</p>
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Service Details Grid -->
-        <div class="service-content">
-
-          <!-- Main Visual Section -->
-          <div class="visual-section" data-aos="fade-up" data-aos-delay="200">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <div class="service-image">
-                  <img src="assets/img/services/services-1.webp" alt="Support coordinator meeting with participant" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="service-text">
-                  <h2>Your Partner in Navigating the NDIS</h2>
-                  <p>Support coordination is a capacity building support designed to help you implement all supports in your NDIS plan, including informal, mainstream, community, and funded supports.</p>
-                  <p>Your support coordinator works with you to understand your plan, connect you with providers, negotiate services and prices, and build your ability to exercise choice and control.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service Features -->
-          <div class="features-section" data-aos="fade-up" data-aos-delay="300">
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="bi bi-file-text"></i>
-                  </div>
-                  <h4>Plan Understanding</h4>
-                  <p>We help you understand your NDIS plan, budgets, and what supports you can access.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6">
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="bi bi-search"></i>
-                  </div>
-                  <h4>Provider Connections</h4>
-                  <p>We connect you with quality, registered providers who match your needs and preferences.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6">
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="bi bi-tools"></i>
-                  </div>
-                  <h4>Service Agreements</h4>
-                  <p>We assist with service agreements, negotiations, and ensuring you get value for your funding.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6">
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="bi bi-shield-check"></i>
-                  </div>
-                  <h4>Crisis Resolution</h4>
-                  <p>We provide support during service breakdowns or crises to ensure continuity of care.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service Process -->
-          <div class="process-section" data-aos="fade-up" data-aos-delay="400">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="process-info">
-                  <h3>Our Support Coordination Process</h3>
-                  <p>We follow a structured yet flexible approach that puts you at the center of every decision and action.</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="process-steps">
-                  <div class="step">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                      <h5>Initial Assessment & Goal Setting</h5>
-                      <p>We meet with you to understand your goals, preferences, and current situation. We review your NDIS plan together.</p>
-                    </div>
-                  </div>
-
-                  <div class="step">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                      <h5>Support Design & Provider Matching</h5>
-                      <p>We design a support approach and connect you with providers that align with your needs, culture, and location.</p>
-                    </div>
-                  </div>
-
-                  <div class="step">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                      <h5>Implementation & Coordination</h5>
-                      <p>We help establish services, negotiate agreements, and ensure all supports work together effectively.</p>
-                    </div>
-                  </div>
-
-                  <div class="step">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                      <h5>Review & Capacity Building</h5>
-                      <p>We regularly review progress, build your skills to manage supports, and prepare for plan reviews.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Service Information Cards -->
-        <div class="info-grid" data-aos="fade-up" data-aos-delay="500">
-          <div class="row">
-
-            <!-- NDIS Funding Information -->
-            <div class="col-lg-4">
-              <div class="info-card">
-                <div class="info-header">
-                  <h4>NDIS Funding & Levels</h4>
-                </div>
-                <div class="info-content">
-                  <div class="price-range">
-                    <span class="price-label">NDIS Support Category</span>
-                    <span class="price-value">Capacity Building</span>
-                  </div>
-                  <ul class="info-list">
-                    <li><strong>Support Coordination Level 1:</strong> For straightforward plans</li>
-                    <li><strong>Support Coordination Level 2:</strong> For complex support needs</li>
-                    <li><strong>Specialist Support Coordination:</strong> For high complex situations</li>
-                    <li>Funded through your NDIS plan</li>
-                  </ul>
-                  <p class="small-text mt-3">*Must be included in your NDIS plan to access this support</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Participant Testimonial -->
-            <div class="col-lg-4">
-              <div class="info-card">
-                <div class="testimonial-content">
-                  <p>"My support coordinator understood my cultural needs and found providers who respected our family values. She turned a confusing plan into clear steps toward independence."</p>
-                  <div class="testimonial-author">
-                    <img src="assets/img/person/person-f-7.webp" alt="Maria" class="author-image">
-                    <div class="author-info">
-                      <h6>Maria</h6>
-                      <span>NDIS Participant, 18 months</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="col-lg-4">
-              <div class="info-card">
-                <div class="info-header">
-                  <h4>Get Started</h4>
-                  <p>Check if support coordination is in your plan or learn more about this service.</p>
-                </div>
-
-                <form action="forms/contact.php" method="post" class="php-email-form service-form">
-                  <div class="form-field">
-                    <input type="text" name="name" placeholder="Your Name" required="">
-                  </div>
-
-                  <div class="form-field">
-                    <input type="email" name="email" placeholder="Email Address" required="">
-                  </div>
-
-                  <div class="form-field">
-                    <input type="tel" name="phone" placeholder="Phone Number" required="">
-                  </div>
-
-                  <div class="form-field">
-                    <select name="inquiry_type" required="">
-                      <option value="">Type of Inquiry</option>
-                      <option value="plan-check">Check if I have funding</option>
-                      <option value="info">General information</option>
-                      <option value="switch">Switch from current coordinator</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-
-                  <input type="hidden" name="subject" value="Support Coordination Inquiry">
-
-                  <div class="form-field">
-                    <textarea name="message" rows="3" placeholder="Briefly describe your current situation..." required=""></textarea>
-                  </div>
-
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Thank you! We'll check your inquiry and respond within 2 business days.</div>
-
-                  <button type="submit" class="submit-btn">
-                    <span>Send Inquiry</span>
-                    <i class="bi bi-arrow-right"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- FAQ Section -->
-        <div class="faq-section mt-5" data-aos="fade-up" data-aos-delay="600">
-          <h3>Frequently Asked Questions</h3>
-          <div class="accordion" id="supportCoordinationFAQ">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                  Do I need support coordination in my NDIS plan to access this service?
-                </button>
-              </h2>
-              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#supportCoordinationFAQ">
-                <div class="accordion-body">
-                  Yes, support coordination must be included as a funded support in your NDIS plan. We can help you check your plan or request this support at your next plan review if needed.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                  How is support coordination different from plan management?
-                </button>
-              </h2>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#supportCoordinationFAQ">
-                <div class="accordion-body">
-                  Support coordination helps you implement your plan by connecting you with providers and services. Plan management handles the financial aspects - paying providers and managing your NDIS budget. You can have both supports in your plan.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                  Can I change support coordinators if I'm not happy?
-                </button>
-              </h2>
-              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#supportCoordinationFAQ">
-                <div class="accordion-body">
-                  Absolutely. You have complete choice and control over your supports. If you're not satisfied with your current support coordinator, you can switch to another provider. We can help facilitate a smooth transition.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+    <!-- Service Navigation Tabs -->
+    <section class="service-tabs-section">
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-tabs service-tabs justify-content-center" id="serviceTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="community-tab" data-bs-toggle="tab" data-bs-target="#community" type="button" role="tab">Social & Community Participation</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mentoring-tab" data-bs-toggle="tab" data-bs-target="#mentoring" type="button" role="tab">Mentoring</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="daily-living-tab" data-bs-toggle="tab" data-bs-target="#daily-living" type="button" role="tab">Daily Living Support</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="recovery-tab" data-bs-toggle="tab" data-bs-target="#recovery" type="button" role="tab">Recovery Coaching</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="coordination-tab" data-bs-toggle="tab" data-bs-target="#coordination" type="button" role="tab">Support Coordination</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sil-tab" data-bs-toggle="tab" data-bs-target="#sil" type="button" role="tab">Supported Independent Living</button>
+          </li>
+        </ul>
       </div>
+    </section>
 
-    </section><!-- /Service Details Section -->
+    <!-- Service Details Content -->
+    <section class="service-details-content">
+      <div class="container">
+        <div class="tab-content" id="serviceTabsContent">
+
+          <!-- Social and Community Participation -->
+          <div class="tab-pane fade show active" id="community" role="tabpanel">
+            <div class="service-content-section" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                  <div class="service-icon-large">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <h2>Social and Community Participation</h2>
+                  <p class="lead">At Enhanced Living Pathways, we support participants to actively engage in their community, build meaningful connections, and participate in activities that promote confidence, wellbeing, and independence. Our approach is flexible, person-centred, and guided by individual interests and goals.</p>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>What We Provide</h4>
+                    <ul class="feature-list">
+                      <li>Support attending social, recreational, and community activities</li>
+                      <li>Assistance building friendships and social confidence</li>
+                      <li>Assistance accessing education, volunteering, or skill-building opportunities</li>
+                      <li>Support exploring hobbies and interests</li>
+                      <li>Transport to and from community activities</li>
+                      <li>Support to develop social skills and communication</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>Our Commitment</h4>
+                    <p>We are committed to supporting inclusion, choice, and empowerment, helping participants connect with their community, develop confidence, and enjoy a fulfilling, active lifestyle.</p>
+                    <h5 class="mt-4">NDIS Funding Categories:</h5>
+                    <ul class="feature-list">
+                      <li>Community Participation (Core Supports)</li>
+                      <li>Social and Community Participation (Capacity Building)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <a href="index.html#contact" class="btn-primary">Enquire About This Service</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentoring -->
+          <div class="tab-pane fade" id="mentoring" role="tabpanel">
+            <div class="service-content-section" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                  <div class="service-icon-large">
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h2>Mentoring</h2>
+                  <p class="lead">At Enhanced Living Pathways, our mentoring service supports participants to build confidence, develop life skills, and work toward personal goals in a supportive and encouraging environment. We focus on strengths, independence, and meaningful community participation.</p>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>What We Provide</h4>
+                    <ul class="feature-list">
+                      <li>One-on-one mentoring tailored to personal goals and interests</li>
+                      <li>Support building confidence, motivation, and decision-making skills</li>
+                      <li>Guidance with social skills, communication, and relationships</li>
+                      <li>Encouragement to engage in community, education, or employment pathways</li>
+                      <li>Practical strategies to promote independence and wellbeing</li>
+                      <li>Goal-setting and progress tracking</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>Our Approach</h4>
+                    <p>We provide respectful, person-centred mentoring that empowers individuals to grow, build resilience, and achieve greater independence while feeling supported every step of the way.</p>
+                    <h5 class="mt-4">Benefits of Mentoring:</h5>
+                    <ul class="feature-list">
+                      <li>Increased self-confidence and self-esteem</li>
+                      <li>Better decision-making abilities</li>
+                      <li>Improved social connections</li>
+                      <li>Greater independence in daily life</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <a href="index.html#contact" class="btn-primary">Enquire About This Service</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Assistance with Daily Living and Household Tasks -->
+          <div class="tab-pane fade" id="daily-living" role="tabpanel">
+            <div class="service-content-section" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                  <div class="service-icon-large">
+                    <i class="bi bi-house-door"></i>
+                  </div>
+                  <h2>Assistance with Daily Living and Household Tasks</h2>
+                  <p class="lead">At Enhanced Living Pathways, we provide practical, respectful support to help people manage everyday tasks while maintaining independence, comfort, and wellbeing at home. Our approach is person-centred, flexible, and tailored to participant routines, preferences, and goals.</p>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>What We Provide</h4>
+                    <ul class="feature-list">
+                      <li>Personal care assistance</li>
+                      <li>Meal preparation</li>
+                      <li>Household tasks including cleaning, laundry, and organisation</li>
+                      <li>Assistance with shopping, appointments, and daily routines</li>
+                      <li>Skill-building to promote independence in everyday living</li>
+                      <li>Medication reminders and support</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>Our Commitment</h4>
+                    <p>We focus on dignity, choice, and empowerment, supporting you to live comfortably in your home, maintain independence, and build confidence in daily life.</p>
+                    <h5 class="mt-4">NDIS Funding Categories:</h5>
+                    <ul class="feature-list">
+                      <li>Assistance with Daily Living (Core Supports)</li>
+                      <li>Assistance with Daily Living (Capacity Building)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <a href="index.html#contact" class="btn-primary">Enquire About This Service</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Psychosocial Recovery Coaching -->
+          <div class="tab-pane fade" id="recovery" role="tabpanel">
+            <div class="service-content-section" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                  <div class="service-icon-large">
+                    <i class="bi bi-heart-pulse"></i>
+                  </div>
+                  <h2>Psychosocial Recovery Coaching</h2>
+                  <p class="lead">Our Psychosocial Recovery Coaching service supports people living with mental health challenges to work toward recovery, independence, and meaningful participation in everyday life. We take a trauma-informed, strengths-based and person-centred approach that values your lived experience, goals, and aspirations.</p>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>What We Provide</h4>
+                    <ul class="feature-list">
+                      <li>Recovery-focused coaching tailored to your personal goals</li>
+                      <li>Support building daily living skills, resilience, and confidence</li>
+                      <li>Coordination with mental health services, carers, and supports</li>
+                      <li>Strategies for managing mental health challenges</li>
+                      <li>Support to build and maintain social connections</li>
+                      <li>Assistance with navigating mental health systems</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>Our Approach</h4>
+                    <p>We walk alongside you in your recovery journey, promoting independence, wellbeing, and connection. Our coaches are trained in trauma-informed practice and understand the unique challenges of psychosocial disability.</p>
+                    <h5 class="mt-4">NDIS Funding Category:</h5>
+                    <ul class="feature-list">
+                      <li>Psychosocial Recovery Coach (Capacity Building)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <a href="index.html#contact" class="btn-primary">Enquire About This Service</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Support Coordination -->
+          <div class="tab-pane fade" id="coordination" role="tabpanel">
+            <div class="service-content-section" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                  <div class="service-icon-large">
+                    <i class="bi bi-diagram-3"></i>
+                  </div>
+                  <h2>Support Coordination</h2>
+                  <p class="lead">At Enhanced Living Pathways, our Support Coordination service helps participants understand, navigate, and make the most of their supports. We work alongside you to build confidence, strengthen independence, and ensure your services align with your goals and needs.</p>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>What We Provide</h4>
+                    <ul class="feature-list">
+                      <li>Guidance to understand your NDIS plan and funding</li>
+                      <li>Connection to suitable service providers and community supports</li>
+                      <li>Assistance coordinating multiple services effectively</li>
+                      <li>Support to build skills for greater independence and choice</li>
+                      <li>Advocacy to ensure your needs and preferences are heard</li>
+                      <li>Preparation for plan reviews</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h4>Our Commitment</h4>
+                    <p>We focus on empowering you with knowledge, choice, and control, helping you access the right supports.</p>
+                    <h5 class="mt-4">Support Coordination Levels:</h5>
+                    <ul class="feature-list">
+                      <li>Level 1: Support Connection</li>
+                      <li>Level 2: Coordination of Supports</li>
+                      <li>Level 3: Specialist Support Coordination</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <a href="index.html#contact" class="btn-primary">Enquire About This Service</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Supported Independent Living -->
+          <div class="tab-pane fade" id="sil" role="tabpanel">
+            <div class="service-content-section" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                  <div class="service-icon-large">
+                    <i class="bi bi-house-heart"></i>
+                  </div>
+                  <h2>Supported Independent Living</h2>
+                  <p class="lead">At Enhanced Living Pathways, we provide supportive accommodation options designed to help participants live as independently and confidently as possible. Our services are person-centred, flexible, and focused on building everyday living skills while ensuring comfort, stability, and wellbeing.</p>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-md-4">
+                  <div class="info-box">
+                    <h4>Short-Term Accommodation (STA) / Respite</h4>
+                    <p>We offer short stays in a welcoming and supportive environment. This can provide a break for participants and their carers, opportunities to try new experiences, or transitional support when needed.</p>
+                    <ul class="feature-list mt-3">
+                      <li>Flexible stay durations</li>
+                      <li>Fully accessible accommodation</li>
+                      <li>24/7 support available</li>
+                      <li>Social and recreational activities</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="info-box">
+                    <h4>Medium-Term Accommodation (MTA)</h4>
+                    <p>Our medium-term housing options provide stable accommodation while longer-term housing solutions are being arranged. We ensure continuity of support and comfort during this transition period.</p>
+                    <ul class="feature-list mt-3">
+                      <li>Up to 90 days accommodation</li>
+                      <li>Bridge to permanent housing</li>
+                      <li>Support to find long-term solutions</li>
+                      <li>Skill development for independent living</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="info-box">
+                    <h4>Supported Independent Living (SIL)</h4>
+                    <p>Our Supported Independent Living (SIL) services assist participants to live as independently as possible in a supported environment with shared or individual supports.</p>
+                    <ul class="feature-list mt-3">
+                      <li>24/7 support options</li>
+                      <li>Shared or individual living</li>
+                      <li>Life skills development</li>
+                      <li>Community integration</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <a href="index.html#contact" class="btn-primary">Enquire About This Service</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us section light-background">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Why Choose Enhanced Living Pathways</h2>
+          <p>Your Trusted NDIS Partner</p>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box text-center">
+              <i class="bi bi-award" style="font-size: 2.5rem; color: #ffb347;"></i>
+              <h4 class="mt-3">Registered Provider</h4>
+              <p>Fully registered with NDIS Quality and Safeguards Commission</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box text-center">
+              <i class="bi bi-person-check" style="font-size: 2.5rem; color: #ffb347;"></i>
+              <h4 class="mt-3">Person-Centred</h4>
+              <p>Your goals and choices guide everything we do</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box text-center">
+              <i class="bi bi-clock-history" style="font-size: 2.5rem; color: #ffb347;"></i>
+              <h4 class="mt-3">Experienced Team</h4>
+              <p>Qualified professionals with years of experience</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box text-center">
+              <i class="bi bi-chat-heart" style="font-size: 2.5rem; color: #ffb347;"></i>
+              <h4 class="mt-3">Local Knowledge</h4>
+              <p>Deep understanding of local services and communities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta section">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Ready to Start Your Journey?</h2>
+            <p class="lead">Contact our friendly team today to discuss how we can support you.</p>
+            <div class="cta-buttons mt-4">
+              <a href="index.html#contact" class="btn-primary me-3">Enquire Now</a>
+              <a href="tel:1300123456" class="btn-secondary">
+                <i class="bi bi-telephone"></i> Call +61 406 936 623
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -380,8 +578,8 @@
           <div class="footer-contact pt-3">
             <p>Registered NDIS Provider</p>
             <p>NDIS Registration Number: 4050000000</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>1300 123 456</span></p>
-            <p><strong>Email:</strong> <span>contact@enhancedliving.com.au</span></p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+61 406 936 623</span></p>
+            <p><strong>Email:</strong> <span>admin.enhancedlivingpathways.com.au</span></p>
           </div>
         </div>
 
@@ -389,7 +587,6 @@
           <h4>Quick Links</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About NDIS</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Our Services</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="privacy.html">Privacy Policy</a></li>
           </ul>
@@ -398,10 +595,12 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Support Coordination</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Daily Living Support</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Therapeutic Supports</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="starterpage.html">Get Started</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#community" onclick="showService('community')">Community Participation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#mentoring" onclick="showService('mentoring')">Mentoring</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#daily-living" onclick="showService('daily-living')">Daily Living Support</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#recovery" onclick="showService('recovery')">Recovery Coaching</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#coordination" onclick="showService('coordination')">Support Coordination</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#sil" onclick="showService('sil')">SIL/STA/MTA</a></li>
           </ul>
         </div>
 
@@ -452,6 +651,31 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Function to show specific service tab when clicked from footer
+    function showService(serviceId) {
+      const tabId = serviceId + '-tab';
+      const tab = document.getElementById(tabId);
+      if (tab) {
+        tab.click();
+        // Scroll to service content
+        document.querySelector('.service-details-content').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Handle hash in URL to show correct tab
+    window.addEventListener('load', function() {
+      if (window.location.hash) {
+        const hash = window.location.hash.substring(1); // remove the #
+        const tabId = hash + '-tab';
+        const tab = document.getElementById(tabId);
+        if (tab) {
+          tab.click();
+        }
+      }
+    });
+  </script>
 
 </body>
 
